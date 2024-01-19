@@ -1,0 +1,68 @@
+
+<script type="text/javascript">
+    RED.nodes.registerType('TrashDate',{
+        category: 'calendar',
+        color: '#32cd32',
+        defaults: {
+            name: {value:""},
+            filename: {value:""}
+        },
+        inputs: 1,
+        outputs: 6,
+        icon: "icons/trash.svg",
+	outputLabels: ["Date_1","Trashtype_1","Days_1","Date_2","Trashtype_2","Days_2"],
+        label: function() {
+            return this.filename, this.name || "TrashDate";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="TrashDate">
+
+    <div class="form-row">
+        <label for="node-input-filename"><i class="icon-tag"></i> CSV File</label>
+        <input type="text" id="node-input-filename" placeholder="CSV File"></input>
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name"></input>
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="TrashDate">
+    <p>A node that read an CSV File and generate Date, Type and count the days for next and overnext Date of Trash.</p>
+    <p>
+        <ol>
+            <li>create an CSV File with two colums</li>
+            <li>Line 1:  col1;col2 </li>
+            <li>next lines:  Date;TrashType <br><br>like:<br>col1;col2<br>05.01.2024;Yellow Trash<br>12.01.2024;Blue Trash<br>19.01.2024;Brown Trash<br>and so on (whole Year)</li>
+        </ol>
+    </p>
+    <p>node properties:<br />
+        <ol>
+            <li>CSV File: path of the CSV File (mandatory)<br>like: /opt/iobroker/trashcalendar.csv</li>
+            <li>Name: you can set a name of the node (optional)</li>
+        </ol>
+    </p>
+
+    <p>Inputs:<br />
+        <ol>
+            <li>just inject, with repetition every Day</li>            
+        </ol>
+    </p>
+
+    <p>Outputs:<br />
+        <ol>
+            <li>Outout1: Date (col1) of next Trash</li>
+            <li>Outout2: Type (col2) of the next Trash</li>
+            <li>Outout3: Days until next Trash</li>
+            <li>Outout4: Date (col1) of overnext Trash</li>
+            <li>Outout5: Type (col2) of the overnext Trash</li>
+            <li>Outout6: Days until overnext Trash</li>            
+        </ol>
+    </p>
+
+</script>
+
