@@ -1,6 +1,6 @@
 
 {
-    "name": "@JeVoTa/node-red-trashdate",
+    "name": "@JAingTii/node-red-trashdate",
     "version": "0.0.1",
     "description": "A node to generate next and overnext trashdate with type from CSV Files",
     "keywords": ["node-red"],
@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://flows.nodered.org/node/node-red-trashdate"
+        "url": "https://github.com/AingTii/node-red-trashdate.git"
     },
     "node-red": {
 	"version": ">=2.0.0",
