@@ -18,12 +18,13 @@ Inputs:
    just inject, with repetition every Day</li>            
 
 Outputs:
-  Outout1: Date (col1) of next Trash
-  Outout2: Type (col2) of the next Trash
-  Outout3: Days until next Trash
-  Outout4: Date (col1) of overnext Trash
-  Outout5: Type (col2) of the overnext Trash
-  Outout6: Days until overnext Trash       
+         Outout1: Date (col1) of next Trash
+         Outout2: Type (col2) of the next Trash
+         Outout3: Days until next Trash
+         Outout4: Date (col1) of overnext Trash
+         Outout5: Type (col2) of the overnext Trash
+         Outout6: Days until overnext Trash   
+    
 
 
 
