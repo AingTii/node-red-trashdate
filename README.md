@@ -14,9 +14,17 @@ npm install @aingtii/node-red-trashdate
 ## Node Description
 A node that read an CSV File and generate Date, Type and count the days for next and overnext Date of Trash.</p>
 
-1. create an CSV File with two colums</li>
-2. Line 1:  col1;col2 </li>
+### Settings
+1. create an CSV File with two colums
+2. Line 1:  col1;col2
 3. next lines:  Date;TrashType
+
+|col1;col2              |
+|05.01.2024;Yellow Bag  |
+|12.01.2024;Blue Trash  |
+|19.01.2024;Brown Trash |
+|...    ;...            |
+
          like: col1;col2
                05.01.2024;Yellow Trash
                12.01.2024;Blue Tras
