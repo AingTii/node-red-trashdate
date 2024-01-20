@@ -34,11 +34,18 @@ A node that read an CSV File and generate Date, Type and count the days for next
        like: /opt/iobroker/trashcalendar.csv
 2. Name: you can set a name of the node (optional)
  
-Inputs:
+|Inputs:                                 |
+|----------------------------------------|
+|just inject, with repetition every Day  |       
 
-   just inject, with repetition every Day</li>            
-
-Outputs:
+|Outputs:                                     |
+|---------------------------------------------|
+|Output 1 | Date (col1) of next Trash         |
+|Output 2 | Type (col2) of the next Trash     |
+|Output 3 | Days until next Trash             |
+|Output 4 | Date (col1) of overnext Trash     |
+|Output 5 | Type (col2) of the overnext Trash |
+|Output 6 | Days until overnext Trash         |
 
          Outout1: Date (col1) of next Trash
          
