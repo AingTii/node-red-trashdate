@@ -1,7 +1,7 @@
 # Node Red TrashDate
 
-[![NPM](https://img.shields.io/npm/v/@aingtii/node-red-trashdate)](https://www.npmjs.com/package/node-red-trashdate)
-[![NPM_downloads](https://img.shields.io/npm/dm/@aingtii/node-red-trashdate)](https://www.npmjs.com/package/node-red-trashdate)
+[![NPM](https://img.shields.io/npm/v/@aingtii/node-red-trashdate)](https://www.npmjs.com/package/@aingtii/node-red-trashdate)
+[![NPM_downloads](https://img.shields.io/npm/dm/@aingtii/node-red-trashdate)](https://www.npmjs.com/package/@aingtii/node-red-trashdate)
 [![issues](https://img.shields.io/github/issues/mariuslang/@aingtii/node-red-trashdate)](https://github.com/MariusLang/@aingtii/node-red-trashdate/issues)
 [![Node.js CI](https://github.com/MariusLang/@aingtii/node-red-trashdate/actions/workflows/test.yml/badge.svg)](https://github.com/MariusLang/@aingtii/node-red-trashdate/actions/workflows/test.yml)
 
