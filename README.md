@@ -29,12 +29,6 @@ A node that read an CSV File and generate Date, Type and count the days for next
 |                                |
 
 
-         like: col1;col2
-               05.01.2024;Yellow Trash
-               12.01.2024;Blue Tras
-               19.01.2024;Brown Trash
-               and so on (whole Year)
-
     node properties:
 1. CSV File: path of the CSV File (mandatory)
        like: /opt/iobroker/trashcalendar.csv
