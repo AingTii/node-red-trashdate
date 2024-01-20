@@ -39,7 +39,7 @@ A node that read an CSV File and generate Date, Type and count the days for next
 |just inject, with repetition every Day  |       
 
 |Outputs:                                     |
-|---------------------------------------------|
+|---------|-----------------------------------|
 |Output 1 | Date (col1) of next Trash         |
 |Output 2 | Type (col2) of the next Trash     |
 |Output 3 | Days until next Trash             |
