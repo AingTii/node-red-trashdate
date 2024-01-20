@@ -29,7 +29,7 @@ A node that read an CSV File and generate Date, Type and count the days for next
 |                                |
 
 
-    node properties:
+![nodered Propertiers](img/properties.PNG)
 1. CSV File: path of the CSV File (mandatory)
        like: /opt/iobroker/trashcalendar.csv
 2. Name: you can set a name of the node (optional)
