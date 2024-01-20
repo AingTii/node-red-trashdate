@@ -19,7 +19,7 @@ A node that read an CSV File and generate Date, Type and count the days for next
 2. Line 1:  col1;col2
 3. next lines:  Date;TrashType
 
-
+|Example                  |
 |-------------------------|
 |col1;col2                |
 |05.01.2024;Yellow Bag    |
