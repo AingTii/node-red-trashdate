@@ -3,7 +3,7 @@
 [![NPM](https://img.shields.io/npm/v/@aingtii/node-red-trashdate)](https://www.npmjs.com/package/@aingtii/node-red-trashdate)
 [![NPM_downloads](https://img.shields.io/npm/dm/@aingtii/node-red-trashdate)](https://www.npmjs.com/package/@aingtii/node-red-trashdate)
 [![issues](https://img.shields.io/github/issues/aingtii/node-red-trashdate)](https://github.com/aingtiig/node-red-trashdate/issues)
-[![Node.js CI](https://github.com/MariusLang/@aingtii/node-red-trashdate/actions/workflows/test.yml/badge.svg)](https://github.com/MariusLang/@aingtii/node-red-trashdate/actions/workflows/test.yml)
+[![Node.js CI](https://github.com/aingtii/node-red-trashdate/actions/workflows/test.yml/badge.svg)](https://github.com/aingtii/node-red-trashdate/actions/workflows/test.yml)
 
 
 A node that read an CSV File and generate Date, Type and count the days for next and overnext Date of Trash.</p>
