@@ -6,6 +6,12 @@
 
 [![NPM](https://nodei.co/npm/@aingtii/node-red-trashdate.png?compact=true)](https://nodei.co/npm/@aingtii/node-red-trashdate/)
 
+## Installation
+```
+npm install @aingtii/node-red-trashdate
+```
+
+## Node Description
 A node that read an CSV File and generate Date, Type and count the days for next and overnext Date of Trash.</p>
 
 1. create an CSV File with two colums</li>
