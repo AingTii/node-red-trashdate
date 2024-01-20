@@ -19,7 +19,7 @@ A node that read an CSV File and generate Date, Type and count the days for next
 2. Line 1:  col1;col2
 3. next lines:  Date;TrashType
 
-|Example                         |
+|Example CSV File                |
 |--------------------------------|
 |col1;col2                       |
 |05.01.2024;Yellow Bag           |
@@ -33,12 +33,13 @@ A node that read an CSV File and generate Date, Type and count the days for next
 1. CSV File: path of the CSV File (mandatory)
        like: /opt/iobroker/trashcalendar.csv
 2. Name: you can set a name of the node (optional)
- 
+
+## Inputs 
 |Inputs:                                 |
 |----------------------------------------|
 |just inject, with repetition every Day  |       
 
-
+## Outputs
 |Outputs: |                                   |
 |---------|-----------------------------------|
 |Output 1 | Date (col1) of next Trash         |
