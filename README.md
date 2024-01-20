@@ -4,7 +4,7 @@
 [![NPM_downloads](https://img.shields.io/npm/dm/@aingtii/node-red-trashdate)](https://www.npmjs.com/package/@aingtii/node-red-trashdate)
 [![issues](https://img.shields.io/github/issues/aingtii/node-red-trashdate)](https://github.com/aingtiig/node-red-trashdate/issues)
 
-[![NPM](https://nodei.co/npm/node-red-contrib-trashschedule.png?compact=true)](https://nodei.co/npm/@aingtii/node-red-trashdate/)
+[![NPM](https://nodei.co/npm/@aingtii/node-red-trashdate.png?compact=true)](https://nodei.co/npm/@aingtii/node-red-trashdate/)
 
 A node that read an CSV File and generate Date, Type and count the days for next and overnext Date of Trash.</p>
 
