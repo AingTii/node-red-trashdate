@@ -1,7 +1,7 @@
 
 {
     "name": "@JAingTii/node-red-trashdate",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A node to generate next and overnext trashdate with type from CSV Files",
     "keywords": ["node-red"],
     "engines": {
@@ -12,7 +12,7 @@
         "url": "https://github.com/AingTii/node-red-trashdate.git"
     },
     "node-red": {
-	"version": ">=2.0.0",
+	"version": ">=1.0.0",
         "nodes": {
             "sample": "trashdate/TrashDate.js"
         }
