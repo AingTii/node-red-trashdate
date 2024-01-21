@@ -1,6 +1,6 @@
 {
   "name": "@aingtii/node-red-trashdate",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A node to generate next and overnext trashdate with type from CSV Files",
   "keywords": [
     "node-red"
