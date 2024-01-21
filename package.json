@@ -28,8 +28,7 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p dist && find . -path ./dist -prune -o -type f -exec cp {} dist/ && tar -czvf node-red-trashdate.tgz -C dist ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "aingtii"
 }
