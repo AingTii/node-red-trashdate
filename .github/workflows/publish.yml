@@ -2,8 +2,8 @@ name: Node.js Package
 
 on:
   release:
-    types: [created]
-    
+    tags:
+    - "v*.*.*"    
 jobs:  
   publish:
     runs-on: ubuntu-latest
