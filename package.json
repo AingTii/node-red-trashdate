@@ -29,7 +29,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p dist && cp -r * dist/ && tar -czvf my-package.tgz -C dist ."
+    "build": "mkdir -p dist && cp -r !(dist) dist/ && tar -czvf node-red-trashdate.tgz -C dist ."
   },
   "author": "aingtii"
 }
