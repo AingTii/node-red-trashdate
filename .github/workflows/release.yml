@@ -33,3 +33,4 @@ jobs:
           ./node-red-trashdate.tgz
         tag_name: ${{ github.event.release.tag_name }}
         title: ${{ github.event.release.tag_name }}
+        token: ${{ secrets.GIT_GITHUB_TOKEN }}
