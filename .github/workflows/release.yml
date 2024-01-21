@@ -2,8 +2,8 @@ name: Release Workflow
 
 on:
   release:
-    types:
-      - created
+    tags:
+      - "test*.*.*"
   workflow_dispatch:
 
 jobs:
