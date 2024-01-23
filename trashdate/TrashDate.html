@@ -8,9 +8,9 @@
             filename: {value:""}
         },
         inputs: 1,
-        outputs: 6,
+        outputs: 7,
         icon: "icons/trash.svg",
-	outputLabels: ["Date_1","Trashtype_1","Days_1","Date_2","Trashtype_2","Days_2"],
+	outputLabels: ["Date_1","Trashtype_1","Days_1","Date_2","Trashtype_2","Days_2","Today_Tom_Empty"],
         label: function() {
             return this.filename, this.name || "TrashDate";
         }
@@ -32,37 +32,68 @@
 </script>
 
 <script type="text/x-red" data-help-name="TrashDate">
-    <p>A node that read an CSV File and generate Date, Type and count the days for next and overnext Date of Trash.</p>
+    <h3>Discription:</h3>
+
+<p>A node that read an CSV File and generate Date, Type and count the days for next and overnext Date of Trash.</p>
+
+<h3>Setup:</h3>
     <p>
         <ol>
             <li>create an CSV File with two colums</li>
             <li>Line 1:  col1;col2 </li>
-            <li>next lines:  Date;TrashType <br><br>like:<br>col1;col2<br>05.01.2024;Yellow Trash<br>12.01.2024;Blue Trash<br>19.01.2024;Brown Trash<br>and so on (whole Year)</li>
+            <li>next lines:  Date;TrashType <br>(the whole year)<br><br>Example:<br>
+              <img src="data:image/png;base64,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" alt="" />
+
         </ol>
     </p>
+
+<h3>Node Properties:</h3>
+
     <p>node properties:<br />
         <ol>
-            <li>CSV File: path of the CSV File (mandatory)<br>like: /opt/iobroker/trashcalendar.csv</li>
+            <li>CSV File: path of the CSV File (mandatory)</li>
             <li>Name: you can set a name of the node (optional)</li>
+                    
+            
+
+            <img src="data:image/png;base64,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" alt="" />
+          
         </ol>
     </p>
 
-    <p>Inputs:<br />
-        <ol>
-            <li>just inject, with repetition every Day</li>            
-        </ol>
+    <h3>Inputs:</h3>
+    <p>
+        <ul>
+            <li>just an inject, with repetition every Day</li>            
+        </ul>
     </p>
 
-    <p>Outputs:<br />
-        <ol>
-            <li>Outout1: Date (col1) of next Trash</li>
-            <li>Outout2: Type (col2) of the next Trash</li>
-            <li>Outout3: Days until next Trash</li>
-            <li>Outout4: Date (col1) of overnext Trash</li>
-            <li>Outout5: Type (col2) of the overnext Trash</li>
-            <li>Outout6: Days until overnext Trash</li>            
-        </ol>
+    <h3>Outputs:</h3>
+    <p>
+        <ul>
+            <li>Outout 1 => Date (col1) of next Trash</li>
+            <li>Outout 2 => Type (col2) of the next Trash</li>
+            <li>Outout 3 => Days until next Trash</li>
+            <li>Outout 4 => Date (col1) of overnext Trash</li>
+            <li>Outout 5 => Type (col2) of the overnext Trash</li>
+            <li>Outout 6 => Days until overnext Trash</li>
+            <li>Outout 7 => Special Output (see below)</li>
+
+
+<h4>Secial Output 7:</h4>
+<p> This Output is specialy for users of<br>Homematic Mediola AIO Crerator<br><br>
+       Output will be
+       <ul>
+         <li>Today => Today</li>
+         <li>Tomorrow => Tomorrow</li>
+         <li>alle other Days => Empty</li>
+        </ul><br>
+          so you can visible or unvisible a trash icon with this output
+        </ul>
     </p>
+
+<h3>Example Flow:</h3>
+<code>[{"id":"7da36d25d832619e","type":"inject","z":"61b3b2b50abe2c5d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"00 00 * * *","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":410,"y":720,"wires":[["8aa8da39274203af"]]},{"id":"1ed27416fdf65289","type":"debug","z":"61b3b2b50abe2c5d","name":"Date 1","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":810,"y":600,"wires":[]},{"id":"abf287d26d38c692","type":"debug","z":"61b3b2b50abe2c5d","name":"Type 1","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":810,"y":640,"wires":[]},{"id":"beab9eae83db9f1e","type":"debug","z":"61b3b2b50abe2c5d","name":"Days 1","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":820,"y":680,"wires":[]},{"id":"f02060b5f9b31977","type":"debug","z":"61b3b2b50abe2c5d","name":"Date 2","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":810,"y":760,"wires":[]},{"id":"7712f374dbd741f7","type":"debug","z":"61b3b2b50abe2c5d","name":"Type 2","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":810,"y":800,"wires":[]},{"id":"0b2a4fee274720b7","type":"debug","z":"61b3b2b50abe2c5d","name":"Days 2","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":820,"y":840,"wires":[]},{"id":"8aa8da39274203af","type":"TrashDate","z":"61b3b2b50abe2c5d","name":"","filename":"/opt/iobroker/Kalender.csv","x":590,"y":720,"wires":[["1ed27416fdf65289"],["abf287d26d38c692"],["beab9eae83db9f1e"],["f02060b5f9b31977"],["7712f374dbd741f7"],["0b2a4fee274720b7"],["6a3a563662393349"]]},{"id":"6a3a563662393349","type":"debug","z":"61b3b2b50abe2c5d","name":"Special","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":820,"y":880,"wires":[]}]</code>
 
 </script>
 
