@@ -1,34 +1,5 @@
 [
     {
-        "id": "5447c1e30f360d63",
-        "type": "TrashDate",
-        "z": "61b3b2b50abe2c5d",
-        "name": "",
-        "filename": "/opt/iobroker/Kalender.csv",
-        "x": 590,
-        "y": 720,
-        "wires": [
-            [
-                "1ed27416fdf65289"
-            ],
-            [
-                "abf287d26d38c692"
-            ],
-            [
-                "beab9eae83db9f1e"
-            ],
-            [
-                "f02060b5f9b31977"
-            ],
-            [
-                "7712f374dbd741f7"
-            ],
-            [
-                "0b2a4fee274720b7"
-            ]
-        ]
-    },
-    {
         "id": "7da36d25d832619e",
         "type": "inject",
         "z": "61b3b2b50abe2c5d",
@@ -53,7 +24,7 @@
         "y": 720,
         "wires": [
             [
-                "5447c1e30f360d63"
+                "8aa8da39274203af"
             ]
         ]
     },
@@ -157,6 +128,55 @@
         "statusType": "auto",
         "x": 820,
         "y": 840,
+        "wires": []
+    },
+    {
+        "id": "8aa8da39274203af",
+        "type": "TrashDate",
+        "z": "61b3b2b50abe2c5d",
+        "name": "",
+        "filename": "/opt/iobroker/Kalender.csv",
+        "x": 590,
+        "y": 720,
+        "wires": [
+            [
+                "1ed27416fdf65289"
+            ],
+            [
+                "abf287d26d38c692"
+            ],
+            [
+                "beab9eae83db9f1e"
+            ],
+            [
+                "f02060b5f9b31977"
+            ],
+            [
+                "7712f374dbd741f7"
+            ],
+            [
+                "0b2a4fee274720b7"
+            ],
+            [
+                "6a3a563662393349"
+            ]
+        ]
+    },
+    {
+        "id": "6a3a563662393349",
+        "type": "debug",
+        "z": "61b3b2b50abe2c5d",
+        "name": "Special",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 880,
         "wires": []
     }
 ]
