@@ -26,9 +26,9 @@ module.exports = function (RED) {
             } else {
                 node.warn("Kein Dateipfad angegeben.");
             }
-            // Hier Code einfügen Anfang
+            // Hier Code einfÃ¼gen Anfang
 
-            // Datum der zukünftigen 15 Tage speichern
+            // Datum der zukÃ¼nftigen 15 Tage speichern
             var date = [];
             var date1 = [];
             for (var i = 0; i < 16; i++) {
@@ -48,7 +48,7 @@ module.exports = function (RED) {
             }
 
 
-            // Bereitstellung und Ausgabe der nächsten Mülltage 
+            // Bereitstellung und Ausgabe der nÃ¤chsten MÃ¼lltage 
             var Anzahl = 0;
 
             // Auf Zeilen aufteilen
@@ -69,7 +69,7 @@ module.exports = function (RED) {
                     if (msg.payload[i].col1 === context.get("day0")) {
                         var msg1 = { "payload": msg.payload[i].col1 };
                         var msg2 = { "payload": msg.payload[i].col2 };
-                        var msg3 = { payload: "Heute" };
+                        var msg3 = { payload: "Heute" };                        
                         Anzahl = 1;
                         i++;
                     }
@@ -83,7 +83,7 @@ module.exports = function (RED) {
                     else if (msg.payload[i].col1 === context.get("day2")) {
                         var msg1 = { "payload": msg.payload[i].col1 };
                         var msg2 = { "payload": msg.payload[i].col2 };
-                        var msg3 = { payload: "Übermorgen" };
+                        var msg3 = { payload: "Ãœbermorgen" };
                         Anzahl = 1;
                         i++;
                     }
@@ -197,7 +197,7 @@ module.exports = function (RED) {
                     if (msg.payload[i].col1 === context.get("day2")) {
                         var msg4 = { "payload": msg.payload[i].col1 };
                         var msg5 = { "payload": msg.payload[i].col2 };
-                        var msg6 = { payload: "Übermorgen" };
+                        var msg6 = { payload: "Ãœbermorgen" };
                         i = lang;
                         Anzahl = 0;
                     }
@@ -289,15 +289,26 @@ module.exports = function (RED) {
                         var msg6 = { payload: "in 15 Tagen" };
                         i = lang;
                         Anzahl = 0;
-                    }
+                    }                    
                 }
-            }
-            node.send([msg1, msg2, msg3, msg4, msg5, msg6]);
 
-            // Hier Code einfügen Ende
+            }
+            if (msg3.payload === "Heute") {
+                var msg7 = { "payload": "Heute"};
+             }
+             else if (msg3.payload === "Morgen") {
+                var msg7 = { "payload": "Morgen"};
+             }
+             else {
+                var msg7 = { "payload": "Leer"};
+             }   
+            node.send([msg1, msg2, msg3, msg4, msg5, msg6, msg7]);
+
+            // Hier Code einfÃ¼gen Ende
         });
     }
 
     RED.nodes.registerType("TrashDate", trashDate);
 
 };
+
