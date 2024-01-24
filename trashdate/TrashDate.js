@@ -294,13 +294,13 @@ module.exports = function (RED) {
 
             }
             if (msg3.payload === "Heute") {
-                var msg7 = { "payload": "Heute"};
+                var msg7 = { "payload": config.heute};
              }
              else if (msg3.payload === "Morgen") {
-                var msg7 = { "payload": "Morgen"};
+                var msg7 = { "payload": config.morgen};
              }
              else {
-                var msg7 = { "payload": "Leer"};
+                var msg7 = { "payload": config.weitere};
              }   
             node.send([msg1, msg2, msg3, msg4, msg5, msg6, msg7]);
 
