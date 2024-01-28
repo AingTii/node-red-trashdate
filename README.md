@@ -80,7 +80,8 @@ alle other Days => Leer<br />
 
 so in AIo Creator you can visible or unvisible a trash icon with this output<br />
 Like this:
-![Mediola AIO](img/AIO MEdiola Wert LEER.jpg)
+
+![Mediola AIO](img/AIO_mediola.png)
 
 ### Example Flow
 ![example flow](img/example_flow.PNG)
