@@ -78,6 +78,10 @@ alle other Days => Leer<br />
 
 ![nodered Output7](img/Output7.PNG)
 
+so in AIo Creator you can visible or unvisible a trash icon with this output<br />
+Like this:
+![Mediola AIO](img/AIO MEdiola Wert LEER.jpg)
+
 ### Example Flow
 ![example flow](img/example_flow.PNG)
 
