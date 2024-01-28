@@ -92,7 +92,7 @@ module.exports = function (RED) {
                         var msg1 = { "payload": msg.payload[i].col1 };
                         var msg2 = { "payload": msg.payload[i].col2 };
                         if (config.day2 === "") {
-                            var msg3 = { "payload": "Ãœbermorgen" };
+                            var msg3 = { "payload": "\u00DCbermorgen" };
                         } else {
                             var msg3 = { "payload": config.day2 };
                         }
@@ -270,7 +270,7 @@ module.exports = function (RED) {
                         var msg4 = { "payload": msg.payload[i].col1 };
                         var msg5 = { "payload": msg.payload[i].col2 };
                         if (config.day2 === "") {
-                            var msg6 = { "payload": "Ãœbermorgen" };
+                            var msg6 = { "payload": "\u00DCbermorgen" };
                         } else {
                             var msg6 = { "payload": config.day2 };
                         }
